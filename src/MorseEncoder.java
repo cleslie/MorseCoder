@@ -93,7 +93,7 @@ public class MorseEncoder {
         AudioFormat audioFormat = new AudioFormat( (float)44100, 8, 1, true, false );
         AudioInputStream audioInputStream = new AudioInputStream( byteArrayInputStream, audioFormat, audio.length / audioFormat.getFrameSize() );
         try {
-            AudioSystem.write( audioInputStream, AudioFileFormat.Type.WAVE, new File( "test-morse.wav" ));
+            AudioSystem.write( audioInputStream, AudioFileFormat.Type.WAVE, new File( "morse-code.wav" ));
         }
         catch ( Exception e ) {
             e.printStackTrace();
